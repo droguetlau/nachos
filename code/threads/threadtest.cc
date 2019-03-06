@@ -16,7 +16,7 @@
 // testnum is set in main.cc
 int testnum = 1;
 
-extern void ts();
+//extern void ts();
 
 //----------------------------------------------------------------------
 // SimpleThread
@@ -33,9 +33,9 @@ SimpleThread(int tid)
     int num;
     
     for (num = 0; num < 5; num++) {
-    	ts();
+    	//ts();
 	printf("*** thread tid %d looped %d times\n", tid, num);
-        //currentThread->Yield();
+        currentThread->Yield();
     }
 }
 
